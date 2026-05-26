@@ -197,6 +197,12 @@ omniretriever/
 │   ├── evaluation.md
 │   └── benchmark.md
 │
+├── training/                       ← training framework (see training/README.md)
+│   ├── train.sh                    ← canonical launcher (paper recipe)
+│   ├── qwenvl/                     ← Qwen2.5-Omni / WAVE fork + L_A / L_D / L_T
+│   ├── configs/ds_zero0.json
+│   └── third-party-licenses/
+│
 └── assets/figures/                 ← README / docs figures
 ```
 
@@ -221,8 +227,20 @@ OmniRetriever optimises three losses on top of WAVE-7B:
 
 Final objective: `L_A + L_D + L_T` with uniform weights.
 
-> Training code is **not** included in this release. Inference + evaluation
-> only; the released LoRA adapter reproduces every headline number.
+### Training
+
+The full training framework is in [`training/`](training/). To reproduce
+the released LoRA on 4 × H100:
+
+```bash
+WAVE_PATH=/path/to/WAVE-7B \
+BEATS_PATH=/path/to/BEATs.pt \
+DATA_PATH=/path/to/your_avt_manifest.jsonl \
+bash training/train.sh
+```
+
+See [`training/README.md`](training/README.md) for the full recipe,
+ablation switches, and data-manifest schema.
 
 ---
 
