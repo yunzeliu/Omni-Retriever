@@ -10,7 +10,7 @@ Typical use::
 
     model = OmniRetriever.from_pretrained(
         base_model="<wave-7b hub id or local path>",
-        adapter="<TBD>/OmniRetriever-7B",
+        adapter="YunzeLiu/OmniRetriever-7B",
         device="cuda",
         dtype="bfloat16",
     )

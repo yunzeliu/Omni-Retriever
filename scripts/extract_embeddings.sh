@@ -26,7 +26,7 @@ OUTPUT="${2:?OUTPUT .npz path required}"
 shift 2 || true
 
 BASE_MODEL="${BASE_MODEL:-${WAVE_HOME:?WAVE_HOME or BASE_MODEL must be set}/WAVE-7B}"
-ADAPTER="${ADAPTER:-<TBD>/OmniRetriever-7B}"
+ADAPTER="${ADAPTER:-YunzeLiu/OmniRetriever-7B}"
 DEVICE="${DEVICE:-cuda}"
 DTYPE="${DTYPE:-bfloat16}"
 

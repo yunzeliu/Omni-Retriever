@@ -18,11 +18,8 @@ the paper. The released artifacts live on the Hugging Face Hub:
 
 | Artifact | Hub ID | Status |
 | --- | --- | --- |
-| OmniRetriever-7B LoRA adapter | `<TBD>/OmniRetriever-7B` | **TODO** (upload pending) |
-| OmniRetriever-Bench (3,782 AVT triples) | `<TBD>/OmniRetriever-Bench` | **TODO** (upload pending) |
-
-Replace the placeholder hub IDs above with the real ones once the upload
-completes. The pipeline below is correct as-is — only the strings change.
+| OmniRetriever-7B LoRA adapter | [`YunzeLiu/OmniRetriever-7B`](https://huggingface.co/YunzeLiu/OmniRetriever-7B) | **Released** |
+| OmniRetriever-Bench (3,782 AVT triples) | `<TBD>/OmniRetriever-Bench` | **Coming soon** |
 
 ---
 
@@ -109,7 +106,7 @@ $WAVE_HOME/
 ### 3. Pull the OmniRetriever-7B adapter and the benchmark
 
 ```bash
-huggingface-cli download <TBD>/OmniRetriever-7B    --local-dir adapters/omniretriever-7b
+huggingface-cli download YunzeLiu/OmniRetriever-7B    --local-dir adapters/omniretriever-7b
 huggingface-cli download <TBD>/OmniRetriever-Bench --repo-type dataset \
     --local-dir benchmark
 ```
@@ -150,7 +147,7 @@ from omniretriever import OmniRetriever, recall_at_k, ndcg_at_10
 
 model = OmniRetriever.from_pretrained(
     base_model=f"{WAVE_HOME}/WAVE-7B",
-    adapter="<TBD>/OmniRetriever-7B",       # HF Hub ID or local path
+    adapter="YunzeLiu/OmniRetriever-7B",       # HF Hub ID or local path
     dtype="bfloat16",
 )
 

@@ -36,7 +36,7 @@ export WAVE_HOME=/path/to/wave-7b-root
 ## 3. Pull the adapter and benchmark from the Hub
 
 ```bash
-huggingface-cli download <TBD>/OmniRetriever-7B    --local-dir adapters/omniretriever-7b
+huggingface-cli download YunzeLiu/OmniRetriever-7B    --local-dir adapters/omniretriever-7b
 huggingface-cli download <TBD>/OmniRetriever-Bench --repo-type dataset \
     --local-dir benchmark
 ```
