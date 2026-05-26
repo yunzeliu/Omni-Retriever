@@ -2,10 +2,10 @@
 
 3,782 held-out audio-video-text triples evaluated across 12 retrieval
 directions on a shared gallery. Distributed on the Hugging Face Hub at
-`<TBD>/OmniRetriever-Bench`:
+`YunzeLiu/OmniRetriever-Bench`:
 
 ```bash
-huggingface-cli download <TBD>/OmniRetriever-Bench --repo-type dataset \
+huggingface-cli download YunzeLiu/OmniRetriever-Bench --repo-type dataset \
     --local-dir benchmark
 ```
 

@@ -19,7 +19,7 @@ the paper. The released artifacts live on the Hugging Face Hub:
 | Artifact | Hub ID | Status |
 | --- | --- | --- |
 | OmniRetriever-7B LoRA adapter | [`YunzeLiu/OmniRetriever-7B`](https://huggingface.co/YunzeLiu/OmniRetriever-7B) | **Released** |
-| OmniRetriever-Bench (3,782 AVT triples) | `<TBD>/OmniRetriever-Bench` | **Coming soon** |
+| OmniRetriever-Bench (3,782 AVT triples) | [`YunzeLiu/OmniRetriever-Bench`](https://huggingface.co/datasets/YunzeLiu/OmniRetriever-Bench) | **Released** |
 
 ---
 
@@ -107,11 +107,9 @@ $WAVE_HOME/
 
 ```bash
 huggingface-cli download YunzeLiu/OmniRetriever-7B    --local-dir adapters/omniretriever-7b
-huggingface-cli download <TBD>/OmniRetriever-Bench --repo-type dataset \
+huggingface-cli download YunzeLiu/OmniRetriever-Bench --repo-type dataset \
     --local-dir benchmark
 ```
-
-(Replace `<TBD>/...` with the actual Hub IDs once published.)
 
 ### 4. Extract embeddings on OmniRetriever-Bench
 

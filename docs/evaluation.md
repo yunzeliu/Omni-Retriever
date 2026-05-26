@@ -11,7 +11,7 @@ Output: Recall@1/5/10, NDCG@10, MRR, median rank per direction
 ## OmniRetriever-Bench
 
 ```bash
-huggingface-cli download <TBD>/OmniRetriever-Bench --repo-type dataset \
+huggingface-cli download YunzeLiu/OmniRetriever-Bench --repo-type dataset \
     --local-dir benchmark
 
 bash scripts/extract_embeddings.sh \
