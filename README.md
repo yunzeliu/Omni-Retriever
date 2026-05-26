@@ -14,7 +14,15 @@
 > embedder to date and proposes **fusion-as-teacher distillation** to fix it.
 
 This repository contains the inference and evaluation code that accompanies
-the paper. The released artifacts live on the Hugging Face Hub:
+the paper.
+
+<p align="center">
+  🏠 <a href="https://yunzeliu.github.io/OmniRetriever/"><b>Project page</b></a> ·
+  🤖 <a href="https://huggingface.co/YunzeLiu/OmniRetriever-7B"><b>Model</b></a> ·
+  📊 <a href="https://huggingface.co/datasets/YunzeLiu/OmniRetriever-Bench"><b>Benchmark</b></a>
+</p>
+
+The released artifacts live on the Hugging Face Hub:
 
 | Artifact | Hub ID | Status |
 | --- | --- | --- |
