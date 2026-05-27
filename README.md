@@ -17,6 +17,7 @@ This repository contains the inference and evaluation code that accompanies
 the paper.
 
 <p align="center">
+  📄 <a href="https://arxiv.org/abs/2605.26641"><b>Paper</b></a> ·
   🏠 <a href="https://yunzeliu.github.io/OmniRetriever/"><b>Project page</b></a> ·
   🤖 <a href="https://huggingface.co/YunzeLiu/OmniRetriever-7B"><b>Model</b></a> ·
   📊 <a href="https://huggingface.co/datasets/YunzeLiu/OmniRetriever-Bench"><b>Benchmark</b></a>
@@ -256,7 +257,7 @@ ablation switches, and data-manifest schema.
 @article{liu2026omniretriever,
   title   = {OmniRetriever: Any-to-Any Audio-Video-Text Retrieval via Fusion-as-Teacher Distillation},
   author  = {Liu, Yunze and Wu, Chi-Hao and Zhou, Enmin and Shen, Junxiao},
-  journal = {arXiv preprint},
+  journal = {arXiv preprint arXiv:2605.26641},
   year    = {2026}
 }
 ```
