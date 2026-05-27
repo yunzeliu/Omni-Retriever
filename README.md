@@ -255,10 +255,13 @@ ablation switches, and data-manifest schema.
 
 ```bibtex
 @article{liu2026omniretriever,
-  title   = {OmniRetriever: Any-to-Any Audio-Video-Text Retrieval via Fusion-as-Teacher Distillation},
-  author  = {Liu, Yunze and Wu, Chi-Hao and Zhou, Enmin and Shen, Junxiao},
-  journal = {arXiv preprint arXiv:2605.26641},
-  year    = {2026}
+  title         = {OmniRetriever: Any-to-Any Audio-Video-Text Retrieval via Fusion-as-Teacher Distillation},
+  author        = {Liu, Yunze and Wu, Chi-Hao and Zhou, Enmin and Shen, Junxiao},
+  year          = {2026},
+  eprint        = {2605.26641},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  doi           = {10.48550/arXiv.2605.26641}
 }
 ```
 
